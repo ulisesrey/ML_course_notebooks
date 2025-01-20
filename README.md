@@ -2,7 +2,7 @@
 This repository contains some exercices I solved with Machine Learning tools during the Machine Learning course at the Data Science Master at UOC.
 
 ## 1. Data Processing, balancing for LDA
-### 1.1
+### 1.1 Wine ANalysis
 ### 1.2 NASA SkyRocket failure detection using imblearn and LDA
 In this project we used the dataset `Turbo_engine.csv` to predict Rocket failure from the NASA Dataset. Since the dataset is unbalanced for the category we want to predict (failure), we used the imblearn library to balance our dataset. The idea is that without balancing our data, a model never predicting failure would have very high accuracy, because failure happens very, very rarely. However, when failure happens the consequences are dramatic, so we want to build a classifier that would detect all of them. Different data balancing methods (Random, SMOTE, ADASYN) were evaluated with a simple LDA (Linear Discrimination Analysis) to determine best strategy to detect Rocket Failure.
 [Link to notebook](engine_failure_prediction/engine_failure_prediction.ipynb)/[html](engine_failure_prediction/engine_failure_prediction.html)
@@ -12,7 +12,14 @@ Tools: [LDA](https://scikit-learn.org/stable/modules/generated/sklearn.discrimin
 
 ## 2.
 ## 3.
-## 4.
+## 4. Myocardial Infarction prediction with Decision Trees and Ensemble models
+I used a myocardial infarction dataset from UC Irvine to predict the patient outcome after a myocardial infarction. Trained Decision Trees, Random Forest and combinations using Boosting methods like Gradient Boosting or XGBoost to find the model with highest accuracy.
+[Link to notebook](myocardial_infarction/myocardial_infarction.ipynb)/[html](myocardial_infarction/myocardial_infarction.html)
+
+Tools: Decision Trees, Random Forest Classifier, Boosting like XGBoost.
 
 
-Note: This repository contains the final version of the exercises. The cimmit history of the progress is in a private repository.
+
+
+
+Note: This repository contains the final version of the exercises. The commit history of the progress is in a private repository.
